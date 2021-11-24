@@ -23,3 +23,18 @@ footer.classname = "footer"
 
 // Create a new li element.
 document.createElement("li");
+
+// Give the li the text “four”.
+addLi.innerText = "Four"
+
+// Append the li to the ul element.
+let uL = document.querySelector("ul")
+uL.appendChild(addLi)
+// Loop over all of the lis inside the ol tag and give them a background color of “green”.
+let oLS = document.querySelectorAll("ol li")
+for(let i = 0; i < oLS.length; i++){
+    oLS[i].style.backgroundColor = "green"
+}
+
+// Remove the div with a class of footer
+footer.remove();
